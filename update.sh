@@ -10,10 +10,10 @@ installed() {
 }
 
 if installed curl; then
-    curl https://papermc.io/api/v1/paper/1.16.4/latest/download --output paper.jar
+    curl https://papermc.io/api/v1/paper/1.16.4/latest/download --output server/paper.jar
     echo 'Downloaded paper.jar using curl'
 elif installed wget; then
-    wget -O paper.jar https://papermc.io/api/v1/paper/1.16.4/latest/download
+    wget -O server/paper.jar https://papermc.io/api/v1/paper/1.16.4/latest/download
     echo 'Downloaded paper.jar using wget'
 else
     echo 'Curl/wget is not installed!'
